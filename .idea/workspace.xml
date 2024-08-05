@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding postgres and dev profile">
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Removing docker-compose dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" afterDir="false" />
     </list>
@@ -35,10 +35,18 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/adding_springboot" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,7 +88,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
-    "git-widget-placeholder": "feature/adding__springboot",
+    "git-widget-placeholder": "feature/account",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -95,6 +103,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.iobit.comercio_vizinho_be.entities" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ComercioVizinhoBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -127,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722855865993</updated>
-      <workItem from="1722855867072" duration="2242000" />
+      <workItem from="1722855867072" duration="8473000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -153,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722857154651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removing docker-compose dependency">
+      <option name="closed" value="true" />
+      <created>1722858746163</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722858746163</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +184,7 @@
     <MESSAGE value="Adding springboot" />
     <MESSAGE value="Adding h2 and enabling test profile" />
     <MESSAGE value="Adding postgres and dev profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding postgres and dev profile" />
+    <MESSAGE value="Removing docker-compose dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing docker-compose dependency" />
   </component>
 </project>
