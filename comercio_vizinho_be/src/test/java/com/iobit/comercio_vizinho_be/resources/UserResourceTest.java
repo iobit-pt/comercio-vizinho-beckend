@@ -14,6 +14,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
 
+import java.util.List;
+
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class UserResourceTest {
@@ -25,11 +27,10 @@ public class UserResourceTest {
     @DirtiesContext
     void shouldGetAllUsers() throws Exception {
 
-        ResponseEntity<String> response = restTemplate.getForEntity("/users", String.class);
+        ResponseEntity<List> response = restTemplate.getForEntity("/users", List.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
-//        TODO: put here the other assertions
-
+        assertThat(response.getBody()).hasSize(3);
 
     }
 
@@ -59,6 +60,8 @@ public class UserResourceTest {
                                  .getName()).isEqualTo("New User2");
 
     }
+
+//    TODO: CREATE TESTS FOR OTHER CRUD OPERATIONS
 
 
 }
