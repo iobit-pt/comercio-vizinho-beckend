@@ -48,7 +48,7 @@ public class UserResources {
                                            .toUri();
 
         return ResponseEntity.created(uri)
-                             .build();
+                             .body(user);
     }
 
 }

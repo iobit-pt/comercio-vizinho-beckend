@@ -25,11 +25,10 @@ public class UserResourceTest {
     @DirtiesContext
     void shouldGetAllUsers() throws Exception {
 
-        ResponseEntity<String> response = restTemplate.getForEntity("/users",  String.class);
+        ResponseEntity<String> response = restTemplate.getForEntity("/users", String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
 //        TODO: put here the other assertions
-
 
 
     }
@@ -39,6 +38,9 @@ public class UserResourceTest {
     void shouldGetAUserByIdIfItExists() throws Exception {
         ResponseEntity<User> response = restTemplate.getForEntity("/users/99", User.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
+        assertThat(response.getBody()
+                           .getName()).isEqualTo("New User");
     }
 
 
@@ -46,10 +48,15 @@ public class UserResourceTest {
     @DirtiesContext
     void shouldBeAbleToCreateAnUser() throws Exception {
 
-        User newUser = new User(null, "New User", "newuser@email.com", 999999, "");
+        User newUser = new User(null, "New User2", "newuser@email.com", 999999, "");
 
-        ResponseEntity<Void> createResponse = restTemplate.postForEntity("/users", newUser, Void.class);
+        ResponseEntity<User> createResponse = restTemplate.postForEntity("/users", newUser, User.class);
         assertThat(createResponse.getStatusCode()).isEqualTo(HttpStatus.CREATED);
+
+        assertThat(createResponse.getBody()
+                                 .getId()).isEqualTo(1L);
+        assertThat(createResponse.getBody()
+                                 .getName()).isEqualTo("New User2");
 
     }
 
