@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Wip: unity test for create new user using repository">
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Wip: unity test to user resource">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/UserResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/UserResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/UserResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +22,20 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/comercio_vizinho_be">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="comercio_vizinho_be" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="comercio_vizinho_be" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -83,7 +91,16 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.Build comercio_vizinho_be.executor": "Run",
+    "Gradle.UserResource.executor": "Run",
+    "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
+    "Gradle.UserResource.shouldGetAUserByID.executor": "Run",
+    "Gradle.UserResource.shouldListAllUsers.executor": "Run",
+    "Gradle.UserResourceTest.executor": "Run",
+    "Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor": "Run",
+    "Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor": "Run",
+    "Gradle.UserResourceTest.shouldGetAllUsers.executor": "Run",
     "Gradle.UserTest.shouldCreateANewUser.executor": "Run",
+    "Gradle.comercio_vizinho_be [test].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -93,6 +110,7 @@
     "git-widget-placeholder": "feature/account",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,15 +121,22 @@
     "project.structure.side.proportion": "0.37090433",
     "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be" />
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserTest.shouldCreateANewUser">
-    <configuration name="UserTest.shouldCreateANewUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.comercio_vizinho_be [test]">
+    <configuration name="UserResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
@@ -124,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.iobit.comercio_vizinho_be.entities.UserTest.shouldCreateANewUser&quot;" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,6 +158,100 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest.shouldBeAbleToCreateAnUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldBeAbleToCreateAnUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest.shouldGetAUserByIdIfItExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldGetAUserByIdIfItExists&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest.shouldGetAllUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldGetAllUsers&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="comercio_vizinho_be [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="ComercioVizinhoBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -151,7 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserTest.shouldCreateANewUser" />
+        <item itemvalue="Gradle.comercio_vizinho_be [test]" />
+        <item itemvalue="Gradle.UserResourceTest.shouldGetAUserByIdIfItExists" />
+        <item itemvalue="Gradle.UserResourceTest" />
+        <item itemvalue="Gradle.UserResourceTest.shouldGetAllUsers" />
+        <item itemvalue="Gradle.UserResourceTest.shouldBeAbleToCreateAnUser" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +294,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722855865993</updated>
-      <workItem from="1722855867072" duration="11904000" />
+      <workItem from="1722855867072" duration="24814000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -213,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722866034530</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Wip: unity test to user resource">
+      <option name="closed" value="true" />
+      <created>1722873117151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722873117151</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +356,7 @@
     <MESSAGE value="Adding postgres and dev profile" />
     <MESSAGE value="Removing docker-compose dependency" />
     <MESSAGE value="Wip: unity test for create new user using repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wip: unity test for create new user using repository" />
+    <MESSAGE value="Wip: unity test to user resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wip: unity test to user resource" />
   </component>
 </project>

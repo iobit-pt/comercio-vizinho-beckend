@@ -1,0 +1,1 @@
+INSERT INTO tb_users (ID, NAME, EMAIL, PHONE_NUMBER, IMGURL) VALUES (99, 'New User', 'newuser@email.com', 999999, '');
