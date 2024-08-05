@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Removing docker-compose dependency">
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Wip: unity test for create new user using repository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/UserResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/UserResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +52,22 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "wesAlves"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wesAlves&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/iobit-pt/comercio-vizinho-beckend.git",
-    "accountId": "807fdd72-9be5-4f63-9537-0207076f40c3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iobit-pt/comercio-vizinho-beckend.git&quot;,
+    &quot;accountId&quot;: &quot;807fdd72-9be5-4f63-9537-0207076f40c3&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2kEjvU74XuhqlFZxzs5zoBxix68" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -82,6 +83,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.Build comercio_vizinho_be.executor": "Run",
+    "Gradle.UserTest.shouldCreateANewUser.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -108,7 +110,31 @@
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.UserTest.shouldCreateANewUser">
+    <configuration name="UserTest.shouldCreateANewUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.entities.UserTest.shouldCreateANewUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ComercioVizinhoBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="comercio_vizinho_be.main" />
@@ -123,6 +149,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UserTest.shouldCreateANewUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -140,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722855865993</updated>
-      <workItem from="1722855867072" duration="8473000" />
+      <workItem from="1722855867072" duration="11904000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -174,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722858746163</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Wip: unity test for create new user using repository">
+      <option name="closed" value="true" />
+      <created>1722866034530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722866034530</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +224,7 @@
     <MESSAGE value="Adding h2 and enabling test profile" />
     <MESSAGE value="Adding postgres and dev profile" />
     <MESSAGE value="Removing docker-compose dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing docker-compose dependency" />
+    <MESSAGE value="Wip: unity test for create new user using repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wip: unity test for create new user using repository" />
   </component>
 </project>
