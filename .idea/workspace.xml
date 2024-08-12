@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Wip: unity test to user resource">
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Updating tests">
+      <change afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/repositories/AddressRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/UserResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Address.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +33,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="comercio_vizinho_be" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="comercio_vizinho_be" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -55,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/adding_springboot" />
+        <entry key="$PROJECT_DIR$" value="feature/consumer_and_provider" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,7 +103,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
-    "git-widget-placeholder": "feature/account",
+    "git-widget-placeholder": "#2 on feature/account",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be",
@@ -123,11 +119,15 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ],
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/" />
       <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be" />
       <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be" />
     </key>
@@ -135,7 +135,7 @@
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.comercio_vizinho_be [test]">
+  <component name="RunManager" selected="Gradle.UserResourceTest.shouldGetAllUsers">
     <configuration name="UserResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.comercio_vizinho_be [test]" />
         <item itemvalue="Gradle.UserResourceTest.shouldGetAUserByIdIfItExists" />
-        <item itemvalue="Gradle.UserResourceTest" />
         <item itemvalue="Gradle.UserResourceTest.shouldGetAllUsers" />
         <item itemvalue="Gradle.UserResourceTest.shouldBeAbleToCreateAnUser" />
+        <item itemvalue="Gradle.UserResourceTest" />
+        <item itemvalue="Gradle.comercio_vizinho_be [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -295,6 +295,8 @@
       <option name="presentableId" value="Default" />
       <updated>1722855865993</updated>
       <workItem from="1722855867072" duration="24814000" />
+      <workItem from="1722891377988" duration="10960000" />
+      <workItem from="1723452462391" duration="3062000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -344,7 +346,39 @@
       <option name="project" value="LOCAL" />
       <updated>1722873117151</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Wip: unity test to user adding sql file to seed testing db">
+      <option name="closed" value="true" />
+      <created>1722894798306</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722894798306</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding test to create a new user">
+      <option name="closed" value="true" />
+      <created>1722897246117</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722897246117</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updating tests">
+      <option name="closed" value="true" />
+      <created>1722897925012</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722897925012</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updating tests">
+      <option name="closed" value="true" />
+      <created>1723045623471</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723045623471</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +391,9 @@
     <MESSAGE value="Removing docker-compose dependency" />
     <MESSAGE value="Wip: unity test for create new user using repository" />
     <MESSAGE value="Wip: unity test to user resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wip: unity test to user resource" />
+    <MESSAGE value="Wip: unity test to user adding sql file to seed testing db" />
+    <MESSAGE value="Adding test to create a new user" />
+    <MESSAGE value="Updating tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating tests" />
   </component>
 </project>

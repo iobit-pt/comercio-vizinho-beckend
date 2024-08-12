@@ -13,18 +13,18 @@ public class Address implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String street;
-    private String build;
-    private String num;
+    private String number;
+    private String detail;
     private String postalCode;
 
     public Address() {
     }
 
-    public Address(Long id, String street, String build, String num, String postalCode) {
+    public Address(Long id, String street, String number, String detail, String postalCode) {
         this.id = id;
         this.street = street;
-        this.build = build;
-        this.num = num;
+        this.number = number;
+        this.detail = detail;
         this.postalCode = postalCode;
     }
 
@@ -44,20 +44,20 @@ public class Address implements Serializable {
         this.street = street;
     }
 
-    public String getBuild() {
-        return build;
+    public String getNumber() {
+        return number;
     }
 
-    public void setBuild(String build) {
-        this.build = build;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getNum() {
-        return num;
+    public String getDetail() {
+        return detail;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public void setDetail(String detail) {
+        this.detail = detail;
     }
 
     public String getPostalCode() {
