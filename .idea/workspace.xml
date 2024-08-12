@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Updating tests">
-      <change afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/repositories/AddressRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Address.java" afterDir="false" />
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding testing to be red for address resource">
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +83,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.AddressResourceTest.executor": "Run",
     "Gradle.Build comercio_vizinho_be.executor": "Run",
     "Gradle.UserResource.executor": "Run",
     "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
@@ -135,7 +133,31 @@
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserResourceTest.shouldGetAllUsers">
+  <component name="RunManager" selected="Gradle.AddressResourceTest">
+    <configuration name="AddressResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.AddressResourceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="UserResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -232,28 +254,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="comercio_vizinho_be [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="ComercioVizinhoBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="comercio_vizinho_be.main" />
@@ -270,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddressResourceTest" />
         <item itemvalue="Gradle.UserResourceTest.shouldGetAUserByIdIfItExists" />
         <item itemvalue="Gradle.UserResourceTest.shouldGetAllUsers" />
         <item itemvalue="Gradle.UserResourceTest.shouldBeAbleToCreateAnUser" />
         <item itemvalue="Gradle.UserResourceTest" />
-        <item itemvalue="Gradle.comercio_vizinho_be [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +296,7 @@
       <updated>1722855865993</updated>
       <workItem from="1722855867072" duration="24814000" />
       <workItem from="1722891377988" duration="10960000" />
-      <workItem from="1723452462391" duration="3062000" />
+      <workItem from="1723452462391" duration="3881000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -378,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723045623471</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding address repository, resources,service">
+      <option name="closed" value="true" />
+      <created>1723456408233</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723456408233</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding testing to be red for address resource">
+      <option name="closed" value="true" />
+      <created>1723456432780</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723456432780</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +410,8 @@
     <MESSAGE value="Wip: unity test to user adding sql file to seed testing db" />
     <MESSAGE value="Adding test to create a new user" />
     <MESSAGE value="Updating tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating tests" />
+    <MESSAGE value="Adding address repository, resources,service" />
+    <MESSAGE value="Adding testing to be red for address resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding testing to be red for address resource" />
   </component>
 </project>
