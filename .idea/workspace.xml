@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding postgres and dev profile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/build.gradle" afterDir="false" />
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding testing to be red for address resource">
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/comercio_vizinho_be">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -35,30 +37,38 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/consumer_and_provider" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "wesAlves"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wesAlves&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/iobit-pt/comercio-vizinho-beckend.git",
-    "accountId": "807fdd72-9be5-4f63-9537-0207076f40c3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iobit-pt/comercio-vizinho-beckend.git&quot;,
+    &quot;accountId&quot;: &quot;807fdd72-9be5-4f63-9537-0207076f40c3&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2kEjvU74XuhqlFZxzs5zoBxix68" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -73,16 +83,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.AddressResourceTest.executor": "Run",
     "Gradle.Build comercio_vizinho_be.executor": "Run",
+    "Gradle.UserResource.executor": "Run",
+    "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
+    "Gradle.UserResource.shouldGetAUserByID.executor": "Run",
+    "Gradle.UserResource.shouldListAllUsers.executor": "Run",
+    "Gradle.UserResourceTest.executor": "Run",
+    "Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor": "Run",
+    "Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor": "Run",
+    "Gradle.UserResourceTest.shouldGetAllUsers.executor": "Run",
+    "Gradle.UserTest.shouldCreateANewUser.executor": "Run",
+    "Gradle.comercio_vizinho_be [test].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
-    "git-widget-placeholder": "feature/adding__springboot",
+    "git-widget-placeholder": "#2 on feature/account",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -93,9 +115,145 @@
     "project.structure.side.proportion": "0.37090433",
     "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ],
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/" />
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be" />
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.iobit.comercio_vizinho_be.entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AddressResourceTest">
+    <configuration name="AddressResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.AddressResourceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest.shouldBeAbleToCreateAnUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldBeAbleToCreateAnUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest.shouldGetAUserByIdIfItExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldGetAUserByIdIfItExists&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserResourceTest.shouldGetAllUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldGetAllUsers&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="ComercioVizinhoBeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="comercio_vizinho_be.main" />
@@ -110,6 +268,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AddressResourceTest" />
+        <item itemvalue="Gradle.UserResourceTest.shouldGetAUserByIdIfItExists" />
+        <item itemvalue="Gradle.UserResourceTest.shouldGetAllUsers" />
+        <item itemvalue="Gradle.UserResourceTest.shouldBeAbleToCreateAnUser" />
+        <item itemvalue="Gradle.UserResourceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -127,7 +294,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722855865993</updated>
-      <workItem from="1722855867072" duration="2242000" />
+      <workItem from="1722855867072" duration="24814000" />
+      <workItem from="1722891377988" duration="10960000" />
+      <workItem from="1723452462391" duration="3881000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -153,7 +322,79 @@
       <option name="project" value="LOCAL" />
       <updated>1722857154651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removing docker-compose dependency">
+      <option name="closed" value="true" />
+      <created>1722858746163</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722858746163</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Wip: unity test for create new user using repository">
+      <option name="closed" value="true" />
+      <created>1722866034530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722866034530</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Wip: unity test to user resource">
+      <option name="closed" value="true" />
+      <created>1722873117151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722873117151</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Wip: unity test to user adding sql file to seed testing db">
+      <option name="closed" value="true" />
+      <created>1722894798306</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722894798306</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding test to create a new user">
+      <option name="closed" value="true" />
+      <created>1722897246117</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722897246117</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updating tests">
+      <option name="closed" value="true" />
+      <created>1722897925012</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722897925012</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updating tests">
+      <option name="closed" value="true" />
+      <created>1723045623471</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723045623471</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adding address repository, resources,service">
+      <option name="closed" value="true" />
+      <created>1723456408233</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723456408233</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding testing to be red for address resource">
+      <option name="closed" value="true" />
+      <created>1723456432780</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723456432780</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +404,14 @@
     <MESSAGE value="Adding springboot" />
     <MESSAGE value="Adding h2 and enabling test profile" />
     <MESSAGE value="Adding postgres and dev profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding postgres and dev profile" />
+    <MESSAGE value="Removing docker-compose dependency" />
+    <MESSAGE value="Wip: unity test for create new user using repository" />
+    <MESSAGE value="Wip: unity test to user resource" />
+    <MESSAGE value="Wip: unity test to user adding sql file to seed testing db" />
+    <MESSAGE value="Adding test to create a new user" />
+    <MESSAGE value="Updating tests" />
+    <MESSAGE value="Adding address repository, resources,service" />
+    <MESSAGE value="Adding testing to be red for address resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding testing to be red for address resource" />
   </component>
 </project>
