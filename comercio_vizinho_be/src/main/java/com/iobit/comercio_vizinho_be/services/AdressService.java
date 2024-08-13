@@ -16,4 +16,8 @@ public class AdressService {
     public List<Address> findAll() {
         return repository.findAll();
     }
+
+    public Address create(Address address) {
+        return repository.save(address);
+    }
 }
