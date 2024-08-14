@@ -14,9 +14,7 @@ import org.springframework.test.annotation.DirtiesContext;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-import javax.swing.*;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -63,7 +61,17 @@ public class AddressResourceTest {
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
-        ResponseEntity<Address> requestUpdated = restTemplate.getForEntity()
+        ResponseEntity<Address> responseUpdated = restTemplate.getForEntity("/addresses/101", Address.class);
+
+        assertThat(responseUpdated.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(Objects.requireNonNull(responseUpdated.getBody())
+                          .getId()).isEqualTo(101L);
+        assertThat(responseUpdated.getBody()
+                                  .getStreet()).isEqualTo("Rua do Lobo mau");
+        assertThat(responseUpdated.getBody()
+                                  .getDetail()).isEqualTo("Toca do lobo");
+        assertThat(responseUpdated.getBody()
+                                  .getPostalCode()).isEqualTo("WOLF-001");
     }
 
 }
