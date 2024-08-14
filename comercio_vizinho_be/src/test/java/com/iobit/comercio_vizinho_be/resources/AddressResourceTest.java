@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
@@ -14,6 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.swing.*;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -55,9 +58,12 @@ public class AddressResourceTest {
     @DirtiesContext
     void shouldBeAbleToUpdateAnAddress() throws Exception {
         Address updatedAddress = new Address(null, "Rua do Lobo mau", "69", "Toca do lobo", "WOLF-001");
-        ResponseEntity<Address> response = restTemplate.put("/addresses/101", updatedAddress);
+        HttpEntity<Address> request = new HttpEntity<>(updatedAddress);
+        ResponseEntity<Void> response = restTemplate.exchange("/addresses/101", HttpMethod.PUT, request, Void.class);
 
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
+        ResponseEntity<Address> requestUpdated = restTemplate.getForEntity()
     }
 
 }
