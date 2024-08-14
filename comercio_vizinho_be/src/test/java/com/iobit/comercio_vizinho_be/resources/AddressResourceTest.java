@@ -14,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.swing.*;
 import java.util.List;
+import java.util.Objects;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AddressResourceTest {
@@ -38,8 +39,15 @@ public class AddressResourceTest {
         ResponseEntity<Address> response = restTemplate.postForEntity("/addresses", newAddress, Address.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
 
+        assertThat(Objects.requireNonNull(response.getBody())
+                          .getId()).isNotNull();
         assertThat(response.getBody()
-                           .getId()).isEqualTo(104L);
+                           .getStreet()).isEqualTo("Rua das jaqueiras");
+        assertThat(response.getBody()
+                           .getNumber()).isEqualTo("22");
+        assertThat(response.getBody()
+                           .getPostalCode()).isEqualTo("2400-3333");
+        assertThat(response.getBody().getDetail()).isEqualTo("Casa das jacas");
     }
 
 }

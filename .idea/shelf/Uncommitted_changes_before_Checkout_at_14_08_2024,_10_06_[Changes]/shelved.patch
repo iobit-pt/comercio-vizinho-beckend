@@ -1,0 +1,145 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b51b3357-7534-4df3-be44-9a20e6b135ac\" name=\"Changes\" comment=\"Adding testing to be red for address resource\">\n      <change beforePath=\"$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$/comercio_vizinho_be\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$/comercio_vizinho_be\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"comercio_vizinho_be\" type=\"f1a62948:ProjectNode\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"feature/consumer_and_provider\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;wesAlves&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/iobit-pt/comercio-vizinho-beckend.git&quot;,\n    &quot;accountId&quot;: &quot;807fdd72-9be5-4f63-9537-0207076f40c3&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2kEjvU74XuhqlFZxzs5zoBxix68\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"abbreviatePackageNames\" value=\"true\" />\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n    <option name=\"showMembers\" value=\"true\" />\n    <option name=\"showVisibilityIcons\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"Gradle.AddressResourceTest.executor\": \"Run\",\n    \"Gradle.Build comercio_vizinho_be.executor\": \"Run\",\n    \"Gradle.UserResource.executor\": \"Run\",\n    \"Gradle.UserResource.shouldBeAbleToCreateAnUser.executor\": \"Run\",\n    \"Gradle.UserResource.shouldGetAUserByID.executor\": \"Run\",\n    \"Gradle.UserResource.shouldListAllUsers.executor\": \"Run\",\n    \"Gradle.UserResourceTest.executor\": \"Run\",\n    \"Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor\": \"Run\",\n    \"Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor\": \"Run\",\n    \"Gradle.UserResourceTest.shouldGetAllUsers.executor\": \"Run\",\n    \"Gradle.UserTest.shouldCreateANewUser.executor\": \"Run\",\n    \"Gradle.comercio_vizinho_be [test].executor\": \"Run\",\n    \"RequestMappingsPanelOrder0\": \"0\",\n    \"RequestMappingsPanelOrder1\": \"1\",\n    \"RequestMappingsPanelWidth0\": \"75\",\n    \"RequestMappingsPanelWidth1\": \"75\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"Spring Boot.ComercioVizinhoBeApplication.executor\": \"Run\",\n    \"git-widget-placeholder\": \"#2 on feature/account\",\n    \"jdk.selected.JAVA_MODULE\": \"openjdk-22\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Project\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.37090433\",\n    \"settings.editor.selected.configurable\": \"advanced.settings\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  },\n  \"keyToStringList\": {\n    \"DatabaseDriversLRU\": [\n      \"h2\"\n    ],\n    \"stardust.markdown.MarkdownSplitEditorSuppressor:keyList\": []\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/\" />\n      <recent name=\"$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be\" />\n      <recent name=\"$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be\" />\n    </key>\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\n      <recent name=\"com.iobit.comercio_vizinho_be.entities\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Gradle.AddressResourceTest\">\n    <configuration name=\"AddressResourceTest\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/comercio_vizinho_be\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;com.iobit.comercio_vizinho_be.resources.AddressResourceTest&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>true</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"UserResourceTest\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/comercio_vizinho_be\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>true</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"UserResourceTest.shouldBeAbleToCreateAnUser\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/comercio_vizinho_be\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldBeAbleToCreateAnUser&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>true</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"UserResourceTest.shouldGetAUserByIdIfItExists\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/comercio_vizinho_be\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldGetAUserByIdIfItExists&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>true</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"UserResourceTest.shouldGetAllUsers\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/comercio_vizinho_be\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldGetAllUsers&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>true</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"ComercioVizinhoBeApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\n      <option name=\"FRAME_DEACTIVATION_UPDATE_POLICY\" value=\"UpdateClassesAndResources\" />\n      <module name=\"comercio_vizinho_be.main\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.iobit.comercio_vizinho_be.ComercioVizinhoBeApplication\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.AddressResourceTest\" />\n        <item itemvalue=\"Gradle.UserResourceTest.shouldGetAUserByIdIfItExists\" />\n        <item itemvalue=\"Gradle.UserResourceTest.shouldGetAllUsers\" />\n        <item itemvalue=\"Gradle.UserResourceTest.shouldBeAbleToCreateAnUser\" />\n        <item itemvalue=\"Gradle.UserResourceTest\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62\" />\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b51b3357-7534-4df3-be44-9a20e6b135ac\" name=\"Changes\" comment=\"\" />\n      <created>1722855865993</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1722855865993</updated>\n      <workItem from=\"1722855867072\" duration=\"24814000\" />\n      <workItem from=\"1722891377988\" duration=\"10960000\" />\n      <workItem from=\"1723452462391\" duration=\"3881000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Adding springboot\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722856259031</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722856259032</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Adding h2 and enabling test profile\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722856934303</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722856934303</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Adding postgres and dev profile\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722857154651</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722857154651</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Removing docker-compose dependency\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722858746163</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722858746163</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Wip: unity test for create new user using repository\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722866034530</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722866034530</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Wip: unity test to user resource\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722873117151</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722873117151</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Wip: unity test to user adding sql file to seed testing db\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722894798306</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722894798306</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Adding test to create a new user\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722897246117</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722897246117</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Updating tests\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1722897925012</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1722897925012</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Updating tests\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1723045623471</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1723045623471</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Adding address repository, resources,service\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1723456408233</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1723456408233</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Adding testing to be red for address resource\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1723456432780</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1723456432780</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"13\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Adding springboot\" />\n    <MESSAGE value=\"Adding h2 and enabling test profile\" />\n    <MESSAGE value=\"Adding postgres and dev profile\" />\n    <MESSAGE value=\"Removing docker-compose dependency\" />\n    <MESSAGE value=\"Wip: unity test for create new user using repository\" />\n    <MESSAGE value=\"Wip: unity test to user resource\" />\n    <MESSAGE value=\"Wip: unity test to user adding sql file to seed testing db\" />\n    <MESSAGE value=\"Adding test to create a new user\" />\n    <MESSAGE value=\"Updating tests\" />\n    <MESSAGE value=\"Adding address repository, resources,service\" />\n    <MESSAGE value=\"Adding testing to be red for address resource\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Adding testing to be red for address resource\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding testing to be red for address resource">
+-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" afterDir="false" />
+-    </list>
++    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding post method to make test green and adding service to create a new address" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -80,49 +78,49 @@
+     <option name="showMembers" value="true" />
+     <option name="showVisibilityIcons" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "Gradle.AddressResourceTest.executor": "Run",
+-    "Gradle.Build comercio_vizinho_be.executor": "Run",
+-    "Gradle.UserResource.executor": "Run",
+-    "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
+-    "Gradle.UserResource.shouldGetAUserByID.executor": "Run",
+-    "Gradle.UserResource.shouldListAllUsers.executor": "Run",
+-    "Gradle.UserResourceTest.executor": "Run",
+-    "Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor": "Run",
+-    "Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor": "Run",
+-    "Gradle.UserResourceTest.shouldGetAllUsers.executor": "Run",
+-    "Gradle.UserTest.shouldCreateANewUser.executor": "Run",
+-    "Gradle.comercio_vizinho_be [test].executor": "Run",
+-    "RequestMappingsPanelOrder0": "0",
+-    "RequestMappingsPanelOrder1": "1",
+-    "RequestMappingsPanelWidth0": "75",
+-    "RequestMappingsPanelWidth1": "75",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
+-    "git-widget-placeholder": "#2 on feature/account",
+-    "jdk.selected.JAVA_MODULE": "openjdk-22",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.37090433",
+-    "settings.editor.selected.configurable": "advanced.settings",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;Gradle.AddressResourceTest.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.Build comercio_vizinho_be.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResource.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResource.shouldBeAbleToCreateAnUser.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResource.shouldGetAUserByID.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResource.shouldListAllUsers.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResourceTest.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserResourceTest.shouldGetAllUsers.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.UserTest.shouldCreateANewUser.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.comercio_vizinho_be [test].executor&quot;: &quot;Run&quot;,
++    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
++    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
++    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
++    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;Spring Boot.ComercioVizinhoBeApplication.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;#2 on feature/account&quot;,
++    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.37090433&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+-  "keyToStringList": {
+-    "DatabaseDriversLRU": [
+-      "h2"
++  &quot;keyToStringList&quot;: {
++    &quot;DatabaseDriversLRU&quot;: [
++      &quot;h2&quot;
+     ],
+-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
++    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/" />
+@@ -394,7 +392,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1723456432780</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="Adding a test to create a new address">
++      <option name="closed" value="true" />
++      <created>1723546145297</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1723546145297</updated>
++    </task>
++    <task id="LOCAL-00014" summary="Adding post method to make test green and adding service to create a new address">
++      <option name="closed" value="true" />
++      <created>1723546659025</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1723546659025</updated>
++    </task>
++    <option name="localTasksCounter" value="15" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -412,6 +426,8 @@
+     <MESSAGE value="Updating tests" />
+     <MESSAGE value="Adding address repository, resources,service" />
+     <MESSAGE value="Adding testing to be red for address resource" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Adding testing to be red for address resource" />
++    <MESSAGE value="Adding a test to create a new address" />
++    <MESSAGE value="Adding post method to make test green and adding service to create a new address" />
++    <option name="LAST_COMMIT_MESSAGE" value="Adding post method to make test green and adding service to create a new address" />
+   </component>
+ </project>
+\ No newline at end of file

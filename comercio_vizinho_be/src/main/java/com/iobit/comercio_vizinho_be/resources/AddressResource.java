@@ -31,5 +31,8 @@ public class AddressResource {
                                            .path("/{id}")
                                            .buildAndExpand(address.getId())
                                            .toUri();
+
+        return ResponseEntity.created(uri)
+                             .body(address);
     }
 }
