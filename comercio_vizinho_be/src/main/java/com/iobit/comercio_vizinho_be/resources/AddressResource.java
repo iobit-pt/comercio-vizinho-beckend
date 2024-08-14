@@ -9,6 +9,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/addresses")
@@ -20,6 +21,12 @@ public class AddressResource {
     public ResponseEntity<List<Address>> findAll() {
         return ResponseEntity.ok()
                              .body(service.findAll());
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Optional<Address>> findById(@PathVariable Long id) {
+        return ResponseEntity.ok()
+                             .body(service.findById(id));
     }
 
     @PostMapping
@@ -36,8 +43,9 @@ public class AddressResource {
                              .body(address);
     }
 
-    @PutMapping(value="/{id}")
-    public ResponseEntity<Address> update(@PathVariable Long id){
-        return ResponseEntity.ok().build();
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<Address> update(@PathVariable Long id) {
+        return ResponseEntity.ok()
+                             .build();
     }
 }
