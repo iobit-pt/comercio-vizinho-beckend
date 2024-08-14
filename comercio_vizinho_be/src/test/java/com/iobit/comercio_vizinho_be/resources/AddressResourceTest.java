@@ -47,7 +47,17 @@ public class AddressResourceTest {
                            .getNumber()).isEqualTo("22");
         assertThat(response.getBody()
                            .getPostalCode()).isEqualTo("2400-3333");
-        assertThat(response.getBody().getDetail()).isEqualTo("Casa das jacas");
+        assertThat(response.getBody()
+                           .getDetail()).isEqualTo("Casa das jacas");
+    }
+
+    @Test
+    @DirtiesContext
+    void shouldBeAbleToUpdateAnAddress() throws Exception {
+        Address updatedAddress = new Address(null, "Rua do Lobo mau", "69", "Toca do lobo", "WOLF-001");
+        ResponseEntity<Address> response = restTemplate.put("/addresses/101", updatedAddress);
+
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 
 }
