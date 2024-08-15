@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding testing to be red for address resource">
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/consumer_and_provider" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,7 +101,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
-    "git-widget-placeholder": "#2 on feature/account",
+    "git-widget-placeholder": "feature/address",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be",
@@ -297,6 +297,7 @@
       <workItem from="1722855867072" duration="24814000" />
       <workItem from="1722891377988" duration="10960000" />
       <workItem from="1723452462391" duration="3881000" />
+      <workItem from="1723626702392" duration="1534000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
