@@ -33,6 +33,21 @@ public class AddressResourceTest {
     }
 
     @Test
+    void shouldGetAddressById() throws Exception{
+        ResponseEntity<Address> response = restTemplate.getForEntity("/addresses/99", Address.class);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
+        assertThat(Objects.requireNonNull(response.getBody())
+                          .getId()).isEqualTo(99L);
+        assertThat(response.getBody()
+                                  .getStreet()).isEqualTo("Rua dos bobos");
+        assertThat(response.getBody()
+                                  .getDetail()).isEqualTo("casa engraçada");
+        assertThat(response.getBody()
+                                  .getPostalCode()).isEqualTo("0000-000");
+    }
+
+    @Test
     @DirtiesContext
     void shouldCreateANewAddress() throws Exception {
 
