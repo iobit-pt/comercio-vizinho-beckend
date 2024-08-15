@@ -40,9 +40,7 @@ public class AdressService {
         entity.setPostalCode(obj.getPostalCode());
     }
 
-    public NullValue delete(Long id) {
+    public void delete(Long id) {
         repository.deleteById(id);
-        return null;
-
     }
 }

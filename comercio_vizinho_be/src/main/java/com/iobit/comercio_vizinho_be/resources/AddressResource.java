@@ -56,7 +56,9 @@ public class AddressResource {
     }
 
     @DeleteMapping(value = "/{id}")
-    public ResponseEntity delete(@PathVariable Long id){
-        return ResponseEntity.ok().body(service.delete(id));
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        service.delete(id);
+        return ResponseEntity.noContent()
+                             .build();
     }
 }

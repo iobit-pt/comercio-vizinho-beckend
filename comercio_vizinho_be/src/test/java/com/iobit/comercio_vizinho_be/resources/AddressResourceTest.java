@@ -93,9 +93,11 @@ public class AddressResourceTest {
     @DirtiesContext
     void shouldDeleteAnAddress() throws Exception {
         ResponseEntity<Void> response = restTemplate.exchange("/addresses/101", HttpMethod.DELETE, null, Void.class);
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NO_CONTENT);
         assertThat(response.getBody()).isNull();
 
+        ResponseEntity<Address> responseDeleted = restTemplate.getForEntity("/addresses/101", Address.class);
+        assertThat(responseDeleted.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
 
     }
 
