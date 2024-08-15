@@ -25,8 +25,14 @@ public class AddressResource {
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<Optional<Address>> findById(@PathVariable Long id) {
-        return ResponseEntity.ok()
-                             .body(service.findById(id));
+        Optional<Address> address = service.findById(id);
+        if (address.isPresent()) {
+            return ResponseEntity.ok()
+                                 .body(address);
+        } else {
+            return ResponseEntity.notFound()
+                                 .build();
+        }
     }
 
     @PostMapping
