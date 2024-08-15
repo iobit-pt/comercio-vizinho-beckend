@@ -33,18 +33,18 @@ public class AddressResourceTest {
     }
 
     @Test
-    void shouldGetAddressById() throws Exception{
+    void shouldGetAddressById() throws Exception {
         ResponseEntity<Address> response = restTemplate.getForEntity("/addresses/99", Address.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
         assertThat(Objects.requireNonNull(response.getBody())
                           .getId()).isEqualTo(99L);
         assertThat(response.getBody()
-                                  .getStreet()).isEqualTo("Rua dos bobos");
+                           .getStreet()).isEqualTo("Rua dos bobos");
         assertThat(response.getBody()
-                                  .getDetail()).isEqualTo("casa engraçada");
+                           .getDetail()).isEqualTo("casa engraçada");
         assertThat(response.getBody()
-                                  .getPostalCode()).isEqualTo("0000-000");
+                           .getPostalCode()).isEqualTo("0000-000");
     }
 
     @Test
@@ -87,6 +87,14 @@ public class AddressResourceTest {
                                   .getDetail()).isEqualTo("Toca do lobo");
         assertThat(responseUpdated.getBody()
                                   .getPostalCode()).isEqualTo("WOLF-001");
+    }
+
+    @Test
+    @DirtiesContext
+    void shouldDeleteAnAddress() throws Exception {
+        ResponseEntity<Address> response = restTemplate.delete("/addresses/101");
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(response.getBody()).isNull();
     }
 
 }
