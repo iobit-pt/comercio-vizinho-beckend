@@ -1,6 +1,6 @@
 package com.iobit.comercio_vizinho_be.resources;
 
-import com.iobit.comercio_vizinho_be.entities.Address;
+import com.iobit.comercio_vizinho_be.entities.Goods;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class GoodsResources {
+public class GoodsResourcesTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
@@ -47,15 +47,15 @@ public class GoodsResources {
 
     @Test
     void shouldCreateNewGood() throws Exception {
-        Good newGood = new Good();
-        ResponseEntity<Good> response = restTemplate.postForEntity("/goods", newGood, Good.class);
+        Goods newGood = new Goods();
+        ResponseEntity<Goods> response = restTemplate.postForEntity("/goods", newGood, Goods.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
     }
 
     @Test
     void shouldUpdateAGood() throws Exception {
-        Good updatedGood = new Good();
-        HttpEntity<Good> request = new HttpEntity<>(updatedGood);
+        Goods updatedGood = new Goods();
+        HttpEntity<Goods> request = new HttpEntity<>(updatedGood);
         ResponseEntity<Void>
                 response =
                 restTemplate.exchange("/goods/101", HttpMethod.PUT, request, updatedGood, Void.class);
@@ -68,7 +68,7 @@ public class GoodsResources {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NO_CONTENT);
         assertThat(response.getBody()).isNull();
 
-        ResponseEntity<Good> responseDeleted = restTemplate.getForEntity("/addresses/101", Good.class);
+        ResponseEntity<Goods> responseDeleted = restTemplate.getForEntity("/addresses/101", Goods.class);
         assertThat(responseDeleted.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
 
     }
