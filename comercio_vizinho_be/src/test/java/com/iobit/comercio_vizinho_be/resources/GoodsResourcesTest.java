@@ -58,7 +58,7 @@ public class GoodsResourcesTest {
         HttpEntity<Goods> request = new HttpEntity<>(updatedGood);
         ResponseEntity<Void>
                 response =
-                restTemplate.exchange("/goods/101", HttpMethod.PUT, request, updatedGood, Void.class);
+                restTemplate.exchange("/goods/101", HttpMethod.PUT, request, Void.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 
