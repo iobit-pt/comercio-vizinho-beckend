@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding testing to be red for address resource">
-      <change afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/repositories/GoodsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,12 +59,12 @@
     &quot;assignee&quot;: &quot;wesAlves&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/iobit-pt/comercio-vizinho-beckend.git&quot;,
-    &quot;accountId&quot;: &quot;807fdd72-9be5-4f63-9537-0207076f40c3&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:iobit-pt/comercio-vizinho-beckend.git",
+    "accountId": "582e1a02-0a25-4fbb-9d27-4f81a592d652"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -87,6 +85,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.AddressResourceTest.executor": "Run",
     "Gradle.Build comercio_vizinho_be.executor": "Run",
+    "Gradle.GoodsResourcesTest.executor": "Run",
+    "Gradle.GoodsTest.shouldCreateNewGoods.executor": "Run",
     "Gradle.UserResource.executor": "Run",
     "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
     "Gradle.UserResource.shouldGetAUserByID.executor": "Run",
@@ -135,7 +135,7 @@
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ComercioVizinhoBeApplication">
+  <component name="RunManager" selected="Gradle.GoodsResourcesTest">
     <configuration name="AddressResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,7 +160,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GoodsResourcesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
@@ -173,7 +173,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest&quot;" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.GoodsResourcesTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,7 +184,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserResourceTest.shouldBeAbleToCreateAnUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GoodsTest.shouldCreateNewGoods" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
@@ -197,7 +197,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.iobit.comercio_vizinho_be.resources.UserResourceTest.shouldBeAbleToCreateAnUser&quot;" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.entities.GoodsTest.shouldCreateNewGoods&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -272,19 +272,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GoodsResourcesTest" />
+        <item itemvalue="Gradle.GoodsTest.shouldCreateNewGoods" />
         <item itemvalue="Gradle.AddressResourceTest" />
         <item itemvalue="Gradle.UserResourceTest.shouldGetAUserByIdIfItExists" />
         <item itemvalue="Gradle.UserResourceTest.shouldGetAllUsers" />
-        <item itemvalue="Gradle.UserResourceTest.shouldBeAbleToCreateAnUser" />
-        <item itemvalue="Gradle.UserResourceTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
       </set>
     </attachedChunks>
   </component>
@@ -300,6 +300,7 @@
       <workItem from="1722891377988" duration="10960000" />
       <workItem from="1723452462391" duration="3881000" />
       <workItem from="1723626702392" duration="1534000" />
+      <workItem from="1727088281396" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -397,7 +398,39 @@
       <option name="project" value="LOCAL" />
       <updated>1723456432780</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding goods repository">
+      <option name="closed" value="true" />
+      <created>1727091383578</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727091383578</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Change user - seller to manytoone">
+      <option name="closed" value="true" />
+      <created>1727091409228</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1727091409228</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adding repository test">
+      <option name="closed" value="true" />
+      <created>1727091420957</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1727091420957</updated>
+    </task>
+    <task id="LOCAL-00016" summary="structure">
+      <option name="closed" value="true" />
+      <created>1727091427869</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727091427869</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +448,10 @@
     <MESSAGE value="Updating tests" />
     <MESSAGE value="Adding address repository, resources,service" />
     <MESSAGE value="Adding testing to be red for address resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding testing to be red for address resource" />
+    <MESSAGE value="Adding goods repository" />
+    <MESSAGE value="Change user - seller to manytoone" />
+    <MESSAGE value="Adding repository test" />
+    <MESSAGE value="structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure" />
   </component>
 </project>
