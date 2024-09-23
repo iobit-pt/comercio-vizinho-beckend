@@ -16,6 +16,9 @@ public class Goods implements Serializable {
     private String name;
     private String description;
     private Double price;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User seller;
     private Integer goodsType;
 
