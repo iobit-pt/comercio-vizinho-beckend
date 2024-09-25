@@ -14,9 +14,6 @@ INSERT INTO tb_adresses (ID, STREET, NUMBER, DETAIL, POSTAL_CODE)
 VALUES (101, 'Rua dos porquinhos', '1', 'casa de palha, ao lado da cada de madeira', 'PIG-035-000');
 
 -- GOODS
-INSERT INTO tb_goods (ID, NAME, DESCRIPTION, PRICE)
-VALUES (99, 'Pêssego dos grandes', 'Nacional mesmo', 1.85) INSERT
-INSERT INTO tb_goods (ID, NAME, DESCRIPTION, PRICE)
-VALUES (100, 'Uva roxa', 'Uva para fazer vinho tinto', 2.85);
-INSERT INTO tb_goods (ID, NAME, DESCRIPTION, PRICE)
-VALUES (101, 'Pera rocha', 'Rocha acha', 1.33);
+INSERT INTO tb_goods (ID, NAME, DESCRIPTION, PRICE, USER_ID, GOODS_TYPE) VALUES (99, 'Pêssego dos grandes', 'Nacional mesmo', 1.85, 99, 1);
+INSERT INTO tb_goods (ID, NAME, DESCRIPTION, PRICE, USER_ID, GOODS_TYPE) VALUES (100, 'Uva roxa', 'Uva para fazer vinho tinto', 2.85, 99, 1);
+INSERT INTO tb_goods (ID, NAME, DESCRIPTION, PRICE, USER_ID, GOODS_TYPE) VALUES (101, 'Pera rocha', 'Rocha acha', 1.33, 99, 1);
