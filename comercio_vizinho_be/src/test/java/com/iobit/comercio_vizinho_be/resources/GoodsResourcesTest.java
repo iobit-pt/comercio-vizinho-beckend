@@ -41,7 +41,7 @@ public class GoodsResourcesTest {
 
     @Test
     void shouldGetAGoodById() throws Exception {
-        ResponseEntity<List> response = restTemplate.getForEntity("/goods/99", List.class);
+        ResponseEntity<Goods> response = restTemplate.getForEntity("/goods/99", Goods.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 
