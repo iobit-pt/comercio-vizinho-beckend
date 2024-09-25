@@ -18,8 +18,8 @@ public class Goods implements Serializable {
     private Double price;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User seller;
+    private User user;
+
     private Integer goodsType;
 
     public Goods() {
@@ -30,7 +30,7 @@ public class Goods implements Serializable {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.seller = seller;
+        this.user = seller;
         setGoodsType(goodsType);
     }
 
@@ -66,12 +66,12 @@ public class Goods implements Serializable {
         this.price = price;
     }
 
-    public User getSeller() {
-        return seller;
+    public User getUser() {
+        return user;
     }
 
-    public void setSeller(User seller) {
-        this.seller = seller;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public GoodsType getGoodsType() {
