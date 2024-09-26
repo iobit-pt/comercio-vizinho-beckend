@@ -31,12 +31,18 @@ public class GoodsResourcesTest {
     void shouldGetAllProducts() throws Exception {
         ResponseEntity<List> response = restTemplate.getForEntity("/goods/products", List.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
+        assertThat(response.getBody()).isNotNull();
+        assertThat(response.getBody().size()).isEqualTo(3);
     }
 
     @Test
     void shouldGetAllServices() throws Exception {
         ResponseEntity<List> response = restTemplate.getForEntity("/goods/services", List.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
+        assertThat(response.getBody()).isNotNull();
+        assertThat(response.getBody().size()).isEqualTo(3);
     }
 
     @Test
