@@ -1,13 +1,9 @@
 package com.iobit.comercio_vizinho_be.resources;
 
 import com.iobit.comercio_vizinho_be.entities.Goods;
-import com.iobit.comercio_vizinho_be.repositories.GoodsRepository;
 import com.iobit.comercio_vizinho_be.services.GoodsService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -39,9 +35,13 @@ public class GoodsResources {
 
     @GetMapping(value = "/products")
     public ResponseEntity<List<Goods>> findAllProducts() {
-            return ResponseEntity.ok().body(goodsService.findAllProducts(1));
+        return ResponseEntity.ok().body(goodsService.findAllGoodsByType(1));
     }
 
+    @GetMapping(value = "/services")
+    public ResponseEntity<List<Goods>> findAllServices() {
+        return ResponseEntity.ok().body(goodsService.findAllGoodsByType(2));
+    }
 
 
 }

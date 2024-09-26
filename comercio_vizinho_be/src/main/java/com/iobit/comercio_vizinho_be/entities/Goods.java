@@ -89,11 +89,11 @@ public class Goods implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Goods goods = (Goods) o;
-        return Objects.equals(getId(), goods.getId());
+        return Objects.equals(Id, goods.Id) && Objects.equals(name, goods.name) && Objects.equals(description, goods.description) && Objects.equals(price, goods.price) && Objects.equals(user, goods.user) && Objects.equals(goodsType, goods.goodsType);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(getId());
+        return Objects.hash(Id, name, description, price, user, goodsType);
     }
 }
