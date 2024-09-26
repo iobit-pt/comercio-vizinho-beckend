@@ -33,7 +33,7 @@ public class GoodsResourcesTest {
 
     @Test
     void shouldGetAllProducts() throws Exception {
-        ResponseEntity<List> response = restTemplate.getForEntity("/goods", List.class);
+        ResponseEntity<List> response = restTemplate.getForEntity("/goods/products", List.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
         assertThat(response.getBody()).isNotNull();
