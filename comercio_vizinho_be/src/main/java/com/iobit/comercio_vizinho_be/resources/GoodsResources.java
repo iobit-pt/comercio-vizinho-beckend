@@ -37,4 +37,11 @@ public class GoodsResources {
         }
     }
 
+    @GetMapping(value = "/products")
+    public ResponseEntity<List<Goods>> findAllProducts() {
+            return ResponseEntity.ok().body(goodsService.findAllProducts(1));
+    }
+
+
+
 }

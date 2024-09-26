@@ -19,4 +19,8 @@ public class GoodsService {
         Optional<Goods> goods = repository.findById(id);
         return Optional.ofNullable(goods.orElseThrow(RuntimeException::new));
     }
+
+    public List<Goods> findAllProducts(Integer goodsType) {
+        return repository.findByGoodsType(goodsType);
+    }
 }
