@@ -6,6 +6,8 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+
+//TODO: This one must be an abstract entity and products and services must implements that
 @Entity
 @Table(name = "tb_goods")
 public class Goods implements Serializable {

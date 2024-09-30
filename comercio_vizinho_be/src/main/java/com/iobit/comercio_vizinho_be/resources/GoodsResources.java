@@ -38,6 +38,16 @@ public class GoodsResources {
         return ResponseEntity.ok().body(goodsService.findAllGoodsByType(1));
     }
 
+    @GetMapping(value = "/products/{id}")
+    public ResponseEntity<Optional<Goods>> findProductById(@PathVariable Long id) {
+        try {
+            Optional<Goods> product = goodsService.findById(id);
+            return ResponseEntity.ok().body(product);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     @GetMapping(value = "/services")
     public ResponseEntity<List<Goods>> findAllServices() {
         return ResponseEntity.ok().body(goodsService.findAllGoodsByType(2));

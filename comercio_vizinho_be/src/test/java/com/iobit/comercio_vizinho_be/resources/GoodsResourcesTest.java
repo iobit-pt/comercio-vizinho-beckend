@@ -32,12 +32,25 @@ public class GoodsResourcesTest {
     }
 
     @Test
+    void shouldGetAGoodById() throws Exception {
+        ResponseEntity<Goods> response = restTemplate.getForEntity("/goods/99", Goods.class);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+    }
+
+    @Test
     void shouldGetAllProducts() throws Exception {
         ResponseEntity<List> response = restTemplate.getForEntity("/goods/products", List.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
         assertThat(response.getBody()).isNotNull();
         assertThat(response.getBody().size()).isEqualTo(3);
+    }
+
+    @Test
+    void shouldGetAProductById() throws Exception {
+        ResponseEntity<Goods> response = restTemplate.getForEntity("/goods/products/101", Goods.class);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
     }
 
     @Test
