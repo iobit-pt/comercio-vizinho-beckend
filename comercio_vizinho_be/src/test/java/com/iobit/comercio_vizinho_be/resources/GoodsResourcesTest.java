@@ -111,7 +111,7 @@ public class GoodsResourcesTest {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NO_CONTENT);
         assertThat(response.getBody()).isNull();
 
-        ResponseEntity<Goods> responseDeleted = restTemplate.getForEntity("/addresses/101", Goods.class);
+        ResponseEntity<Goods> responseDeleted = restTemplate.getForEntity("/goods/101", Goods.class);
         assertThat(responseDeleted.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
 
     }

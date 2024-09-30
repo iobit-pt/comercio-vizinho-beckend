@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface GoodsRepository extends JpaRepository<Goods, Long>, JpaSpecificationExecutor<Goods> {
     List<Goods> findByGoodsType(Integer goodsType);
+
 }

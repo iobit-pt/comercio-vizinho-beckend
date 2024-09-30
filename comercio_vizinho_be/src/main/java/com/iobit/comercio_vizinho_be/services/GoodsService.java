@@ -47,6 +47,8 @@ public class GoodsService {
 
     }
 
-    public
+    public void delete(Long id){
+        repository.deleteById(id);
+    }
 
 }
