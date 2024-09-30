@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding test and endpoint to get service by id">
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding endpoint to create a new goods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/GoodsResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/GoodsResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/GoodsService.java" afterDir="false" />
@@ -91,56 +91,58 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.AddressResourceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build comercio_vizinho_be.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsResourcesTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsResourcesTest.shouldGetAGoodById.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsResourcesTest.shouldGetAllGoods.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsResourcesTest.shouldGetAllProducts.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsResourcesTest.shouldGetAllServices.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GoodsTest.shouldCreateNewGoods.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResource.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResource.shouldBeAbleToCreateAnUser.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResource.shouldGetAUserByID.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResource.shouldListAllUsers.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResourceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserResourceTest.shouldGetAllUsers.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.shouldCreateANewUser.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.comercio_vizinho_be [test].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ComercioVizinhoBeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/goods&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/wes/Documents/02-Projetos/09_iobit/2_1_comercio_vizinho_be/comercio_vizinho_be/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37090433&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.AddressResourceTest.executor": "Run",
+    "Gradle.Build comercio_vizinho_be.executor": "Run",
+    "Gradle.GoodsResourcesTest.executor": "Run",
+    "Gradle.GoodsResourcesTest.shouldCreateNewGood.executor": "Run",
+    "Gradle.GoodsResourcesTest.shouldGetAGoodById.executor": "Run",
+    "Gradle.GoodsResourcesTest.shouldGetAllGoods.executor": "Run",
+    "Gradle.GoodsResourcesTest.shouldGetAllProducts.executor": "Run",
+    "Gradle.GoodsResourcesTest.shouldGetAllServices.executor": "Run",
+    "Gradle.GoodsResourcesTest.shouldUpdateAGood.executor": "Run",
+    "Gradle.GoodsTest.executor": "Run",
+    "Gradle.GoodsTest.shouldCreateNewGoods.executor": "Run",
+    "Gradle.UserResource.executor": "Run",
+    "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
+    "Gradle.UserResource.shouldGetAUserByID.executor": "Run",
+    "Gradle.UserResource.shouldListAllUsers.executor": "Run",
+    "Gradle.UserResourceTest.executor": "Run",
+    "Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor": "Run",
+    "Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor": "Run",
+    "Gradle.UserResourceTest.shouldGetAllUsers.executor": "Run",
+    "Gradle.UserTest.shouldCreateANewUser.executor": "Run",
+    "Gradle.comercio_vizinho_be [test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
+    "git-widget-placeholder": "feature/goods",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/wes/Documents/02-Projetos/09_iobit/2_1_comercio_vizinho_be/comercio_vizinho_be/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.37090433",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ],
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/main/resources" />
@@ -154,7 +156,7 @@
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GoodsResourcesTest">
+  <component name="RunManager" selected="Gradle.GoodsResourcesTest.shouldUpdateAGood">
     <configuration name="GoodsResourcesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -179,7 +181,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GoodsResourcesTest.shouldGetAGoodById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GoodsResourcesTest.shouldCreateNewGood" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
@@ -192,7 +194,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.iobit.comercio_vizinho_be.resources.GoodsResourcesTest.shouldGetAGoodById&quot;" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.GoodsResourcesTest.shouldCreateNewGood&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -251,7 +253,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GoodsResourcesTest.shouldGetAllServices" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GoodsResourcesTest.shouldUpdateAGood" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/comercio_vizinho_be" />
@@ -264,7 +266,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.iobit.comercio_vizinho_be.resources.GoodsResourcesTest.shouldGetAllServices&quot;" />
+            <option value="&quot;com.iobit.comercio_vizinho_be.resources.GoodsResourcesTest.shouldUpdateAGood&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -291,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GoodsResourcesTest.shouldUpdateAGood" />
+        <item itemvalue="Gradle.GoodsResourcesTest.shouldCreateNewGood" />
         <item itemvalue="Gradle.GoodsResourcesTest" />
         <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAllProducts" />
         <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAllGoods" />
-        <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAllServices" />
-        <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAGoodById" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +324,7 @@
       <workItem from="1727088281396" duration="6329000" />
       <workItem from="1727258040019" duration="7547000" />
       <workItem from="1727351069224" duration="6701000" />
-      <workItem from="1727691961097" duration="2008000" />
+      <workItem from="1727691961097" duration="5818000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -548,14 +550,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727692771962</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Adding endpoint to create a new goods">
+      <option name="closed" value="true" />
+      <created>1727694648383</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1727694648383</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding postgres and dev profile" />
     <MESSAGE value="Removing docker-compose dependency" />
     <MESSAGE value="Wip: unity test for create new user using repository" />
     <MESSAGE value="Wip: unity test to user resource" />
@@ -580,7 +589,8 @@
     <MESSAGE value="Get goods, get products and get services are working good" />
     <MESSAGE value="Adding test and endpoint to get product by id" />
     <MESSAGE value="Adding test and endpoint to get service by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding test and endpoint to get service by id" />
+    <MESSAGE value="Adding endpoint to create a new goods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding endpoint to create a new goods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

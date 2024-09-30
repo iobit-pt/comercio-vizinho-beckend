@@ -80,14 +80,29 @@ public class GoodsResourcesTest {
         Goods newGood = new Goods(null, "Massagem", "Faço massagens", 1.33, GoodsType.PRODUCT, user);
         ResponseEntity<Goods> response = restTemplate.postForEntity("/goods", newGood, Goods.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
+
+        assertThat(response.getBody()).isNotNull();
     }
 
     @Test
     void shouldUpdateAGood() throws Exception {
-        Goods updatedGood = new Goods();
-        HttpEntity<Goods> request = new HttpEntity<>(updatedGood);
+
+        ResponseEntity<Goods> goodToUpdate = restTemplate.getForEntity("/goods/101", Goods.class);
+        assertThat(goodToUpdate.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(goodToUpdate.getBody()).isNotNull();
+
+        goodToUpdate.getBody().setName("Massagem2");
+
+        HttpEntity<Goods> request = new HttpEntity<>(goodToUpdate.getBody());
         ResponseEntity<Void> response = restTemplate.exchange("/goods/101", HttpMethod.PUT, request, Void.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(goodToUpdate.getBody()).isNotNull();
+
+        ResponseEntity<Goods> updatedGoods = restTemplate.getForEntity("/goods/101", Goods.class);
+        assertThat(updatedGoods.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(updatedGoods.getBody()).isNotNull();
+        assertThat(updatedGoods.getBody().getName()).isEqualTo("Massagem2");
+
     }
 
     @Test

@@ -30,4 +30,21 @@ public class GoodsService {
     public Goods create(Goods good) {
         return repository.save(good);
     }
+
+    public Optional<Goods> update(Long id, Goods good) {
+        Optional<Goods> goodToUpdate = repository.findById(id);
+
+        if (goodToUpdate.isPresent()) {
+            goodToUpdate.get().setName(good.getName());
+            goodToUpdate.get().setPrice(good.getPrice());
+            goodToUpdate.get().setDescription(good.getDescription());
+
+            repository.save(goodToUpdate.get());
+
+            return goodToUpdate;
+        }
+
+        return goodToUpdate;
+
+    }
 }

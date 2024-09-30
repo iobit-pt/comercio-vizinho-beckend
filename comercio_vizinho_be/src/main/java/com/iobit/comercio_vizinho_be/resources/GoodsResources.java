@@ -73,5 +73,11 @@ public class GoodsResources {
         return ResponseEntity.created(uri).body(good);
     }
 
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<Optional<Goods>> update(@PathVariable Long id, @RequestBody Goods good) {
+        Optional<Goods> updatedGood = goodsService.update(id, good);
+        return ResponseEntity.ok().body(updatedGood);
+    }
+
 
 }
