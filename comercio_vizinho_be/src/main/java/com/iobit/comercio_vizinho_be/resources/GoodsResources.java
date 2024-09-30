@@ -79,5 +79,13 @@ public class GoodsResources {
         return ResponseEntity.ok().body(updatedGood);
     }
 
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+
+        goodsService.delete(id);
+
+        return ResponseEntity.noContent().build();
+    }
+
 
 }
