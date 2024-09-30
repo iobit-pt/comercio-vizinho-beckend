@@ -63,10 +63,12 @@ public class GoodsResourcesTest {
     }
 
     @Test
-    void shouldGetAGoodById() throws Exception {
-        ResponseEntity<Goods> response = restTemplate.getForEntity("/goods/99", Goods.class);
+    void shouldGetAServiceById() throws Exception {
+        ResponseEntity<Goods> response = restTemplate.getForEntity("/goods/services/105", Goods.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+
     }
+
 
     @Test
     void shouldCreateNewGood() throws Exception {
@@ -79,9 +81,7 @@ public class GoodsResourcesTest {
     void shouldUpdateAGood() throws Exception {
         Goods updatedGood = new Goods();
         HttpEntity<Goods> request = new HttpEntity<>(updatedGood);
-        ResponseEntity<Void>
-                response =
-                restTemplate.exchange("/goods/101", HttpMethod.PUT, request, Void.class);
+        ResponseEntity<Void> response = restTemplate.exchange("/goods/101", HttpMethod.PUT, request, Void.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 

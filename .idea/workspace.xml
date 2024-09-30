@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="wip: adding some services to data">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Get goods, get products and get services are working good">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Goods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/GoodsResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/GoodsResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/GoodsResourcesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/GoodsResourcesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,57 +90,60 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.AddressResourceTest.executor": "Run",
-    "Gradle.Build comercio_vizinho_be.executor": "Run",
-    "Gradle.GoodsResourcesTest.executor": "Run",
-    "Gradle.GoodsResourcesTest.shouldGetAGoodById.executor": "Run",
-    "Gradle.GoodsResourcesTest.shouldGetAllGoods.executor": "Run",
-    "Gradle.GoodsResourcesTest.shouldGetAllProducts.executor": "Run",
-    "Gradle.GoodsResourcesTest.shouldGetAllServices.executor": "Run",
-    "Gradle.GoodsTest.executor": "Run",
-    "Gradle.GoodsTest.shouldCreateNewGoods.executor": "Run",
-    "Gradle.UserResource.executor": "Run",
-    "Gradle.UserResource.shouldBeAbleToCreateAnUser.executor": "Run",
-    "Gradle.UserResource.shouldGetAUserByID.executor": "Run",
-    "Gradle.UserResource.shouldListAllUsers.executor": "Run",
-    "Gradle.UserResourceTest.executor": "Run",
-    "Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor": "Run",
-    "Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor": "Run",
-    "Gradle.UserResourceTest.shouldGetAllUsers.executor": "Run",
-    "Gradle.UserTest.shouldCreateANewUser.executor": "Run",
-    "Gradle.comercio_vizinho_be [test].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ComercioVizinhoBeApplication.executor": "Run",
-    "git-widget-placeholder": "feature/goods",
-    "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/wes/IdeaProjects/comercio-vizinho-beckend/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.37090433",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.AddressResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build comercio_vizinho_be.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsResourcesTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsResourcesTest.shouldGetAGoodById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsResourcesTest.shouldGetAllGoods.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsResourcesTest.shouldGetAllProducts.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsResourcesTest.shouldGetAllServices.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GoodsTest.shouldCreateNewGoods.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResource.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResource.shouldBeAbleToCreateAnUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResource.shouldGetAUserByID.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResource.shouldListAllUsers.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResourceTest.shouldBeAbleToCreateAnUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResourceTest.shouldGetAUserByIdIfItExists.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserResourceTest.shouldGetAllUsers.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.shouldCreateANewUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.comercio_vizinho_be [test].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ComercioVizinhoBeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/goods&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/wes/Documents/02-Projetos/09_iobit/2_1_comercio_vizinho_be/comercio_vizinho_be/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37090433&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ],
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/main/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/" />
       <recent name="$PROJECT_DIR$/comercio_vizinho_be/src/test/resources/com/iobit/comercio_vizinho_be" />
@@ -154,7 +153,7 @@
       <recent name="com.iobit.comercio_vizinho_be.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ComercioVizinhoBeApplication">
+  <component name="RunManager" selected="Gradle.GoodsResourcesTest">
     <configuration name="GoodsResourcesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -291,9 +290,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GoodsResourcesTest" />
         <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAllProducts" />
         <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAllGoods" />
-        <item itemvalue="Gradle.GoodsResourcesTest" />
         <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAllServices" />
         <item itemvalue="Gradle.GoodsResourcesTest.shouldGetAGoodById" />
       </list>
@@ -302,8 +301,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -321,7 +320,8 @@
       <workItem from="1723626702392" duration="1534000" />
       <workItem from="1727088281396" duration="6329000" />
       <workItem from="1727258040019" duration="7547000" />
-      <workItem from="1727351069224" duration="5250000" />
+      <workItem from="1727351069224" duration="6701000" />
+      <workItem from="1727691961097" duration="438000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -515,7 +515,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727356333285</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="wip: adding product and service url and filter">
+      <option name="closed" value="true" />
+      <created>1727358532662</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1727358532662</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Get goods, get products and get services are working good">
+      <option name="closed" value="true" />
+      <created>1727358688580</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1727358688580</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +561,9 @@
     <MESSAGE value="wip: adding getting by goods type" />
     <MESSAGE value="wip: adding getting by goods type by product green" />
     <MESSAGE value="wip: adding some services to data" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: adding some services to data" />
+    <MESSAGE value="wip: adding product and service url and filter" />
+    <MESSAGE value="Get goods, get products and get services are working good" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get goods, get products and get services are working good" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

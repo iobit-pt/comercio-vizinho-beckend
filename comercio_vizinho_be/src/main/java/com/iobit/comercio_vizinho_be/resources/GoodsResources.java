@@ -53,5 +53,15 @@ public class GoodsResources {
         return ResponseEntity.ok().body(goodsService.findAllGoodsByType(2));
     }
 
+    @GetMapping(value = "/services/{id}")
+    public ResponseEntity<Optional<Goods>> findServiceById(@PathVariable Long id) {
+        try {
+            Optional<Goods> product = goodsService.findById(id);
+            return ResponseEntity.ok().body(product);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
 
 }
