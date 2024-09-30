@@ -4,7 +4,9 @@ import com.iobit.comercio_vizinho_be.entities.Goods;
 import com.iobit.comercio_vizinho_be.services.GoodsService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
@@ -61,6 +63,14 @@ public class GoodsResources {
         } catch (RuntimeException e) {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @PostMapping()
+    public ResponseEntity<Goods> create(@RequestBody Goods good) {
+        good = goodsService.create(good);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(good.getId()).toUri();
+
+        return ResponseEntity.created(uri).body(good);
     }
 
 

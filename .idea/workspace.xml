@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Get goods, get products and get services are working good">
+    <list default="true" id="b51b3357-7534-4df3-be44-9a20e6b135ac" name="Changes" comment="Adding test and endpoint to get service by id">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/entities/Goods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/GoodsResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/resources/GoodsResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/main/java/com/iobit/comercio_vizinho_be/services/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/GoodsResourcesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/comercio_vizinho_be/src/test/java/com/iobit/comercio_vizinho_be/resources/GoodsResourcesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +322,7 @@
       <workItem from="1727088281396" duration="6329000" />
       <workItem from="1727258040019" duration="7547000" />
       <workItem from="1727351069224" duration="6701000" />
-      <workItem from="1727691961097" duration="438000" />
+      <workItem from="1727691961097" duration="2008000" />
     </task>
     <task id="LOCAL-00001" summary="Adding springboot">
       <option name="closed" value="true" />
@@ -531,15 +532,29 @@
       <option name="project" value="LOCAL" />
       <updated>1727358688580</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Adding test and endpoint to get product by id">
+      <option name="closed" value="true" />
+      <created>1727692760149</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1727692760149</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Adding test and endpoint to get service by id">
+      <option name="closed" value="true" />
+      <created>1727692771962</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1727692771962</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding springboot" />
-    <MESSAGE value="Adding h2 and enabling test profile" />
     <MESSAGE value="Adding postgres and dev profile" />
     <MESSAGE value="Removing docker-compose dependency" />
     <MESSAGE value="Wip: unity test for create new user using repository" />
@@ -563,7 +578,9 @@
     <MESSAGE value="wip: adding some services to data" />
     <MESSAGE value="wip: adding product and service url and filter" />
     <MESSAGE value="Get goods, get products and get services are working good" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get goods, get products and get services are working good" />
+    <MESSAGE value="Adding test and endpoint to get product by id" />
+    <MESSAGE value="Adding test and endpoint to get service by id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test and endpoint to get service by id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

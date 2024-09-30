@@ -14,7 +14,9 @@ public class GoodsService {
     @Autowired
     private GoodsRepository repository;
 
-    public List<Goods> findAll() {return repository.findAll();}
+    public List<Goods> findAll() {
+        return repository.findAll();
+    }
 
     public Optional<Goods> findById(Long id) {
         Optional<Goods> goods = repository.findById(id);
@@ -23,5 +25,9 @@ public class GoodsService {
 
     public List<Goods> findAllGoodsByType(Integer goodsType) {
         return repository.findByGoodsType(goodsType);
+    }
+
+    public Goods create(Goods good) {
+        return repository.save(good);
     }
 }

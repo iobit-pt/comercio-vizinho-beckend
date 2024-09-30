@@ -1,6 +1,8 @@
 package com.iobit.comercio_vizinho_be.resources;
 
 import com.iobit.comercio_vizinho_be.entities.Goods;
+import com.iobit.comercio_vizinho_be.entities.User;
+import com.iobit.comercio_vizinho_be.entities.enums.GoodsType;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -72,7 +74,10 @@ public class GoodsResourcesTest {
 
     @Test
     void shouldCreateNewGood() throws Exception {
-        Goods newGood = new Goods();
+
+        User user = restTemplate.getForEntity("/users/99", User.class).getBody();
+
+        Goods newGood = new Goods(null, "Massagem", "Faço massagens", 1.33, GoodsType.PRODUCT, user);
         ResponseEntity<Goods> response = restTemplate.postForEntity("/goods", newGood, Goods.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
     }
