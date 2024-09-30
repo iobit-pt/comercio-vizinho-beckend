@@ -6,6 +6,8 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+
+//TODO: This one must be an abstract entity and products and services must implements that
 @Entity
 @Table(name = "tb_goods")
 public class Goods implements Serializable {
@@ -18,8 +20,8 @@ public class Goods implements Serializable {
     private Double price;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User seller;
+    private User user;
+
     private Integer goodsType;
 
     public Goods() {
@@ -30,7 +32,7 @@ public class Goods implements Serializable {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.seller = seller;
+        this.user = seller;
         setGoodsType(goodsType);
     }
 
@@ -66,12 +68,12 @@ public class Goods implements Serializable {
         this.price = price;
     }
 
-    public User getSeller() {
-        return seller;
+    public User getUser() {
+        return user;
     }
 
-    public void setSeller(User seller) {
-        this.seller = seller;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public GoodsType getGoodsType() {
@@ -89,11 +91,11 @@ public class Goods implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Goods goods = (Goods) o;
-        return Objects.equals(getId(), goods.getId());
+        return Objects.equals(Id, goods.Id) && Objects.equals(name, goods.name) && Objects.equals(description, goods.description) && Objects.equals(price, goods.price) && Objects.equals(user, goods.user) && Objects.equals(goodsType, goods.goodsType);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(getId());
+        return Objects.hash(Id, name, description, price, user, goodsType);
     }
 }
